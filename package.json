@@ -1,0 +1,32 @@
+{
+  "name": "vscode-advanced-poe-filter",
+  "displayName": "AdvancedPoeFilterLang",
+  "description": "TODO",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "advancedpoefilter",
+        "aliases": [
+          "AdvancedPoeFilter",
+          "advancedpoefilter"
+        ],
+        "extensions": [".advancedfilter"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "advancedpoefilter",
+        "scopeName": "source.advancedfilter",
+        "path": "./syntaxes/advancedpoefilter.tmLanguage.json"
+      }
+    ]
+  }
+}

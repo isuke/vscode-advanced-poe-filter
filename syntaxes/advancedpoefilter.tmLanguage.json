@@ -1,0 +1,112 @@
+{
+  "scopeName": "source.advancedfilter",
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "AdvancedPoeFilter",
+  "patterns": [
+    { "include": "#comment-line" },
+    { "include": "#keyword-activity" },
+    { "include": "#keyword-condition" },
+    { "include": "#keyword-action-text" },
+    { "include": "#keyword-action-effect" },
+    { "include": "#macro" },
+    { "include": "#function" },
+    { "include": "#operator" },
+    { "include": "#value-numeric" },
+    { "include": "#value-bool" },
+    { "include": "#value-other" },
+		{ "include": "#string" }
+  ],
+  "repository": {
+    "comment-line": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.advancedpoefilter",
+          "begin": "#",
+          "end": "\n"
+        }
+      ]
+    },
+    "keyword-activity": {
+      "patterns": [
+        {
+          "name": "keyword.other.activity.advancedpoefilter",
+          "match": "\\b(Show|Hide|Unset|Fork|Mixin)\\b"
+        }
+      ]
+    },
+    "keyword-condition": {
+      "patterns": [
+        {
+          "name": "entity.name.function.advancedpoefilter",
+          "match": "\\b(Class|BaseType|Prophecy|DropLevel|ItemLevel|GemLevel|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|Rarity|ShaperItem|ElderItem|FracturedItem|SynthesisedItem|Corrupted|Identified|ShapedMap|Height|Width|HasExplicitMod|AnyEnchantment|HasEnchantment)\\b"
+        }
+      ]
+    },
+    "keyword-action-text": {
+      "patterns": [
+        {
+          "name": "markup.bold.advancedpoefilter",
+          "match": "\\b(SetBorderColor|SetTextColor|SetBackgroundColor|SetFontSize)\\b"
+        }
+      ]
+    },
+    "keyword-action-effect": {
+      "patterns": [
+        {
+          "name": "token.info-token.advancedpoefilter",
+          "match": "\\b(PlayAlertSound|PlayAlertSoundPositional|DisableDropSound|CustomAlertSound|MinimapIcon|PlayEffect)\\b"
+        }
+      ]
+    },
+    "macro": {
+      "name": "support.function.advancedpoefilter",
+      "begin": "(Prop|Var)\\(",
+      "end": "\\)",
+      "patterns": []
+    },
+    "function": {
+      "name": "variable.language.advancedpoefilter",
+      "begin": "(Negate|Grayscale|Saturate|Desaturate|Lighten|Darken|Whiten|Blacken|Hex|Saturation|Lightness|Plus|Minus)\\(",
+      "end": "\\)",
+      "patterns": []
+    },
+    "operator": {
+      "patterns": [
+        {
+          "name": "keyword.operator.advancedpoefilter",
+          "match": "(=|<|>)"
+        }
+      ]
+    },
+    "value-numeric": {
+      "patterns": [
+        {
+          "name": "constant.numeric.advancedpoefilter",
+          "match": "(1|2|3|4|5|6|7|8|9|0)"
+        }
+      ]
+    },
+    "value-bool": {
+      "patterns": [
+        {
+          "name": "constant.language.advancedpoefilter",
+          "match": "\\b(Normal|Magic|Rare|Unique|Largest|Medium|Small|ShAlchemy|ShBlessed|ShChaos|ShDivine|ShExalted|ShFusing|ShGeneral|ShMirror|ShRegal|ShVaal|True|False|Red|Green|Blue|Brown|White|Yellow|Circle|Diamond|Hexagon|Square|Star|Triangle|Temp)\\b"
+        }
+      ]
+    },
+    "value-other": {
+      "patterns": [
+        {
+          "name": "constant.other.advancedpoefilter",
+          "match": "(R|G|B|W)"
+        }
+      ]
+    },
+    "string": {
+      "name": "string.quoted.double.advancedpoefilter",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": []
+    }
+  }
+}
