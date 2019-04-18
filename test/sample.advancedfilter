@@ -1,0 +1,224 @@
+# all actions and conditions
+Show "Section1"
+    Class          "Maps"
+    BaseType       "Sacrificial Garb"
+    Prophecy       "Foo"
+    DropLevel      > 85
+    ItemLevel      >= 70
+    GemLevel       = 10
+    StackSize      < 11
+    MapTier        <= 12
+    Quality        = 15
+    LinkedSockets  = 6
+    Sockets        = 5
+    SocketGroup    RGB
+    Rarity         = Rare
+    ShaperItem     True
+    ElderItem      False
+    FracturedItem  False
+    SynthesisedItem False
+    Corrupted      True
+    Identified     True
+    ShapedMap      True
+    Height         > 1
+    Width          > 2
+    HasExplicitMod "Piyo"
+    AnyEnchantment True
+    HasEnchantment "Enchantment Decree of Force"
+    SetBorderColor           100 101 102
+    SetTextColor             103 104 105
+    SetBackgroundColor       106 107 108
+    SetFontSize              30
+    PlayAlertSound           16 300
+    DisableDropSound         False
+    CustomAlertSound         "C\\foobar\\sound.mp3"
+    MinimapIcon              0 Red Circle
+    PlayEffect               Red
+
+Show "Section2"
+    Class          "Life Flasks" "Mana Flasks" "Hybrid Flasks"
+    BaseType       "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+    Prophecy       "Foo" "Bar"
+    SocketGroup    W
+    Rarity         Rare
+    HasExplicitMod "Piyo" "Piyo"
+    SetBorderColor           100 101 102 200
+    SetTextColor             103 104 105 201
+    SetBackgroundColor       106 107 108 202
+    PlayAlertSound           2
+    MinimapIcon              Medium Red Circle
+    PlayEffect               Blue Temp
+
+Show "Section3"
+    SetBorderColor           Negate()
+    SetTextColor             Grayscale()
+    SetBackgroundColor       Lighten(10%)
+    SetFontSize              Plus(5)
+    PlayAlertSoundPositional ShAlchemy 200
+
+Show "Section4"
+    SetBorderColor           Darken(20%)
+    SetTextColor             Whiten(31%)
+    SetBackgroundColor       Blacken(100%)
+    SetFontSize              Minus(6)
+    PlayAlertSoundPositional ShBlessed
+
+Hide "Section5"
+    SetBorderColor           Saturate(42%)
+    SetTextColor             Desaturate(53%)
+    SetBackgroundColor       Hex(123)
+
+Unset "Section6"
+    SetBorderColor           Saturation(64%)
+    SetTextColor             Lightness(75%)
+
+Hide "Remain Section"
+
+# variables
+Show "Flasks"
+    Class Var("My Class") "Utility Flasks"
+    Identified False
+
+    SetBorderColor 250 251 252
+    PlayAlertSound 1 300
+
+
+# properties
+Show "Flasks"
+    Class "Utility Flasks"
+    Quality >= Prop("Flask Quality")
+
+    SetBorderColor 250 251 252
+    PlayAlertSound 1 300
+
+
+# single fork
+Show "Map Section"
+    Class "Maps"
+    SetBorderColor     200 100 50 123
+
+    Fork "Rarity"
+        Show "Rare"
+            Rarity = Rare
+            SetBorderColor     200 100 51 123
+        Hide "Magic"
+            Rarity = Magic
+            SetBorderColor     200 100 52 123
+        Unset "Normal"
+            Rarity = Normal
+            SetBorderColor     200 100 53 123
+
+# complex sample
+Prop("All Accessory Activity") "Jewelry"
+    Class Var("Jewelries")
+    SetFontSize Var("Small Font Size")
+    SetBackgroundColor Var("Jewelry Color") 200
+
+    Mixin "Base Type"
+        Show "Atlas Base Accessories"
+            BaseType Var("Atlas Base Accessories")
+            SetFontSize Var("Extra Large Font Size")
+            SetBackgroundColor Var("Atlas Color")
+            MinimapIcon Medium Red Var("Accessory Minimap Icon Shape")
+            PlayEffect Red
+            PlayAlertSoundPositional Var("Lofty Sound")
+        Show "Talisman"
+            BaseType "Talisman"
+            SetBackgroundColor Var("Talisman Color")
+            MinimapIcon Medium Yellow Var("Accessory Minimap Icon Shape")
+            PlayEffect Yellow
+            PlayAlertSoundPositional Var("Lofty Sound")
+        Hide "Breach Ring"
+            BaseType "Breach Ring"
+            SetFontSize Var("Small Font Size")
+            SetBackgroundColor Var("Breach Color") 160
+        Unset "Good"
+            BaseType Var("Good Amulets") Var("Good Rings")
+            SetFontSize Var("Large Font Size")
+            SetBackgroundColor Lighten(50%)
+
+            Mixin "Item Level"
+                Show "High"
+                    ItemLevel >= Prop("High Item Level")
+                    SetBorderColor Var("High Item Level Color")
+    Fork "Rarity"
+        Show "Unique"
+            Rarity Unique
+            SetFontSize Var("Large Font Size")
+            SetTextColor Var("Unique Item Color")
+            MinimapIcon Largest Brown Var("Accessory Minimap Icon Shape")
+            PlayEffect Brown
+            CustomAlertSound "./Sounds/Unique.wav"
+            DisableDropSound True
+        Prop("Rare Jewelry Activity") "Rare"
+            Rarity Rare
+            SetTextColor Var("Rare Item Color")
+
+            Mixin "Special"
+                Show "Shaper"
+                    ShaperItem True
+                    SetFontSize Var("Large Font Size")
+                    SetBackgroundColor Var("Shaper/Elder Color")
+                    MinimapIcon Medium Blue Var("Accessory Minimap Icon Shape")
+                    PlayEffect Blue
+                    PlayAlertSoundPositional Var("Lofty Sound")
+                Show "Elder"
+                    ElderItem True
+                    SetFontSize Var("Large Font Size")
+                    SetBackgroundColor Var("Shaper/Elder Color")
+                    MinimapIcon Medium Blue Var("Accessory Minimap Icon Shape")
+                    PlayEffect Blue
+                    PlayAlertSoundPositional Var("Lofty Sound")
+                Show "Fractured"
+                    FracturedItem True
+                    SetFontSize Var("Large Font Size")
+                    SetBackgroundColor Var("Synthesis Color") 200
+                    MinimapIcon Medium Yellow Var("Accessory Minimap Icon Shape")
+                    PlayEffect Yellow
+                    PlayAlertSoundPositional Var("Lofty Sound")
+                Show "Synthesised"
+                    SynthesisedItem True
+                    SetFontSize Var("Large Font Size")
+                    SetBackgroundColor Var("Synthesis Color")
+                    MinimapIcon Medium Yellow Var("Accessory Minimap Icon Shape")
+                    PlayEffect Yellow
+                    PlayAlertSoundPositional Var("Lofty Sound")
+        Prop("Magic Equipment Activity") "Magic"
+            Rarity Magic
+            SetTextColor Var("Magic Item Color")
+        Unset "Normal"
+            Rarity Normal
+            SetTextColor Var("Normal Item Color")
+    Mixin "Corrupted"
+        Unset "True"
+            Corrupted True
+            SetBorderColor Var("Corrupted Color")
+    Mixin "Identified"
+        Unset "True"
+            Identified True
+
+            Mixin "Mods"
+                Show "Benche Craft"
+                    HasExplicitMod Var("Bench Craft Mods")
+                    SetBackgroundColor Var("Crafted Mod Color")
+                    MinimapIcon Medium Blue Var("Accessory Minimap Icon Shape")
+                    PlayEffect Blue
+                    PlayAlertSoundPositional Var("Lofty Sound")
+                Show "Incursion"
+                    HasExplicitMod Var("Incursion Mods")
+                    SetBackgroundColor Var("Incursion Color")
+                    MinimapIcon Medium Red Var("Accessory Minimap Icon Shape")
+                    PlayEffect Red
+                    PlayAlertSoundPositional Var("Lofty Sound")
+                Show "Delve"
+                    HasExplicitMod Var("Delve Mods")
+                    SetBackgroundColor Var("Delve Color")
+                    MinimapIcon Medium Blue Var("Accessory Minimap Icon Shape")
+                    PlayEffect Blue
+                    PlayAlertSoundPositional Var("Lofty Sound")
+                Show "Betrayal"
+                    HasExplicitMod Var("Betrayal Mods")
+                    SetBackgroundColor Var("Betrayal Color")
+                    MinimapIcon Medium Green Var("Accessory Minimap Icon Shape")
+                    PlayEffect Green
+                    PlayAlertSoundPositional Var("Lofty Sound")

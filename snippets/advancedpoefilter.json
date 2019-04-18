@@ -1,0 +1,44 @@
+{
+  "show": {
+    "prefix": "Show Block",
+    "description": "Show Block",
+    "body": [
+      "Show \"${1:Block Name}\"",
+      "\t$0"
+    ]
+  },
+  "hide": {
+    "prefix": "Hide Block",
+    "description": "Hide Block",
+    "body": [
+      "Hide \"${1:Block Name}\"",
+      "\t$0"
+    ]
+  },
+  "unset": {
+    "prefix": "Unset Block",
+    "description": "Unset Block",
+    "body": [
+      "Unset \"${1:Block Name}\"",
+      "\t$0"
+    ]
+  },
+  "fork": {
+    "prefix": "Fork Branch",
+    "description": "Fork Branch",
+    "body": [
+      "Fork \"${1:Fork Name}\"",
+      "\tShow \"${2:Block Name}\"",
+      "\t\t$0"
+    ]
+  },
+  "mixin": {
+    "prefix": "Mixin Branch",
+    "description": "Mixin Branch",
+    "body": [
+      "Mixin \"${1:Mixin Name}\"",
+      "\tShow \"${2:Block Name}\"",
+      "\t\t$0"
+    ]
+  }
+}

@@ -18,7 +18,8 @@
     "vscode": "^1.33.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "icon": "images/icon-192x192.png",
   "contributes": {
@@ -38,6 +39,12 @@
         "language": "advancedpoefilter",
         "scopeName": "source.advancedfilter",
         "path": "./syntaxes/advancedpoefilter.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "advancedpoefilter",
+        "path": "./snippets/advancedpoefilter.json"
       }
     ]
   }
