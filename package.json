@@ -1,14 +1,26 @@
 {
   "name": "vscode-advanced-poe-filter",
   "displayName": "AdvancedPoeFilterLang",
-  "description": "TODO",
   "version": "0.0.1",
+  "description": "Advanced Poe Filter Language Support",
+  "keywords": [
+    "Path of Exile",
+    "Advanced Poe Filter",
+    "Filter of Kalandra"
+  ],
+  "homepage": "https://github.com/isuke/vscode-advanced-poe-filter",
+  "repository": "git@github.com:isuke/vscode-advanced-poe-filter.git",
+  "author": "isuke <isuke770@gmail.com>",
+  "publisher": "TODO",
+  "license": "MIT",
+  "private": false,
   "engines": {
     "vscode": "^1.33.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "icon": "images/icon-192x192.png",
   "contributes": {
     "languages": [
       {
