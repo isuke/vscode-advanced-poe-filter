@@ -10,8 +10,12 @@ Advanced PoE Filter is used by [Filter of Kalarandra](https://filter-of-kalandra
 
 ### Syntax Highlighting
 
-TODO
+![Syntax Highlighting](./images/syntax-highlight.png)
 
 ### Snippets
 
-TODO
+- Show Block
+- Hide Block
+- Unset Block
+- Fork Branch
+- Mixin Branch
