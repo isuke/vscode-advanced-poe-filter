@@ -6,4 +6,17 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Initial release
+- Programmatic Language Features
+
+## [0.0.3] - 2019-04-21
+
+- feat: add Snippets
+
+## [0.0.2] - 2019-04-19
+
+- docs: write documents
+
+## [0.0.1] - 2019-04-19
+
+- feat: implement Syntax Highlight
+- feat: implement Snippets
