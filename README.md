@@ -19,3 +19,5 @@ Advanced PoE Filter is used by [Filter of Kalarandra](https://filter-of-kalandra
 - Unset Block
 - Fork Branch
 - Mixin Branch
+- Var Macro
+- Prop Macro

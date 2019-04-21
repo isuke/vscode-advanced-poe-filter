@@ -40,5 +40,19 @@
       "\tShow \"${2:Block Name}\"",
       "\t\t$0"
     ]
+  },
+  "var": {
+    "prefix": "Var",
+    "description": "Var Macro",
+    "body": [
+      "Var(\"${1:Var Name}\")"
+    ]
+  },
+  "prop": {
+    "prefix": "Prop",
+    "description": "Prop Macro",
+    "body": [
+      "Prop(\"${1:Prop Name}\")"
+    ]
   }
 }
