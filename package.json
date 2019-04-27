@@ -1,7 +1,7 @@
 {
   "name": "vscode-advanced-poe-filter",
   "displayName": "AdvancedPoeFilterLang",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Advanced Poe Filter Language Support",
   "keywords": [
     "Path of Exile",
@@ -27,6 +27,7 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install",
+    "predeploy": "yarn run compile",
     "deploy": "vsce publish"
   },
   "icon": "images/icon-192x192.png",
