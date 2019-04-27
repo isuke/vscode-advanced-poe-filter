@@ -7,6 +7,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 - Programmatic Language Features
+    - outline
+        - nest
+
+## [0.1.0] - 2019-04-27
+
+- feat: implement Outline
 
 ## [0.0.3] - 2019-04-21
 
