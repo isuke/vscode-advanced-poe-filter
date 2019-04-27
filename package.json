@@ -22,9 +22,18 @@
     "Snippets"
   ],
   "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "fix": "eslint --fix src/**/*.ts",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
     "deploy": "vsce publish"
   },
   "icon": "images/icon-192x192.png",
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:advancedpoefilter"
+  ],
   "contributes": {
     "languages": [
       {
@@ -33,7 +42,9 @@
           "AdvancedPoeFilter",
           "advancedpoefilter"
         ],
-        "extensions": [".advancedfilter"],
+        "extensions": [
+          ".advancedfilter"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
@@ -50,5 +61,16 @@
         "path": "./snippets/advancedpoefilter.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.7",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/typescript-estree": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.17.0",
+    "typescript": "^3.4.5",
+    "vscode": "^1.1.33"
   }
 }
