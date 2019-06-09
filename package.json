@@ -1,7 +1,7 @@
 {
   "name": "vscode-advanced-poe-filter",
   "displayName": "AdvancedPoeFilterLang",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Advanced Poe Filter Language Support",
   "keywords": [
     "Path of Exile",
