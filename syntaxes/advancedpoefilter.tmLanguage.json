@@ -38,7 +38,7 @@
       "patterns": [
         {
           "name": "entity.name.function.advancedpoefilter",
-          "match": "\\b(Class|BaseType|Prophecy|DropLevel|ItemLevel|GemLevel|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|Rarity|ShaperItem|ElderItem|FracturedItem|SynthesisedItem|Corrupted|Identified|ShapedMap|Height|Width|HasExplicitMod|AnyEnchantment|HasEnchantment)\\b"
+          "match": "\\b(Class|BaseType|Prophecy|DropLevel|ItemLevel|GemLevel|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|Rarity|ShaperItem|ElderItem|FracturedItem|SynthesisedItem|Corrupted|Identified|ShapedMap|ElderMap|BlightedMap|Height|Width|HasExplicitMod|AnyEnchantment|HasEnchantment)\\b"
         }
       ]
     },

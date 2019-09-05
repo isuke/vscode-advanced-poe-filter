@@ -20,6 +20,8 @@ Show "Section1"
     Corrupted      True
     Identified     True
     ShapedMap      True
+    ElderMap       True
+    BlightedMap    True
     Height         > 1
     Width          > 2
     HasExplicitMod "Piyo"
