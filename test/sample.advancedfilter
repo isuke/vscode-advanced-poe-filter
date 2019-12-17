@@ -27,6 +27,7 @@ Show "Section1"
     HasExplicitMod "Piyo"
     AnyEnchantment True
     HasEnchantment "Enchantment Decree of Force"
+    HasInfluence "Crusader" "Hunter" "Redeemer" "Warlord"
     SetBorderColor           100 101 102
     SetTextColor             103 104 105
     SetBackgroundColor       106 107 108
