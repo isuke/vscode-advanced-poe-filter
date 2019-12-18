@@ -6,107 +6,107 @@
     { "include": "#comment-line" },
     { "include": "#keyword-activity" },
     { "include": "#keyword-condition" },
-    { "include": "#keyword-action-text" },
-    { "include": "#keyword-action-effect" },
+    { "include": "#keyword-action" },
     { "include": "#macro" },
     { "include": "#function" },
     { "include": "#operator" },
+    { "include": "#value-constant" },
     { "include": "#value-numeric" },
-    { "include": "#value-bool" },
-    { "include": "#value-other" },
-		{ "include": "#string" }
+    { "include": "#value-rgbw" },
+    { "include": "#string" }
   ],
   "repository": {
     "comment-line": {
-      "patterns": [
-        {
-          "name": "comment.line.number-sign.advancedpoefilter",
-          "begin": "#",
-          "end": "\n"
-        }
-      ]
+      "begin": "#",
+      "end": "\n",
+      "name": "comment.line.number-sign.advancedpoefilter"
     },
     "keyword-activity": {
-      "patterns": [
-        {
-          "name": "keyword.other.activity.advancedpoefilter",
-          "match": "\\b(Show|Hide|Unset|Fork|Mixin)\\b"
-        }
-      ]
+      "match": "\\b(Show|Hide|Unset|Fork|Mixin)\\b",
+      "name": "keyword.control.activity.advancedpoefilter"
     },
     "keyword-condition": {
-      "patterns": [
-        {
-          "name": "entity.name.function.advancedpoefilter",
-          "match": "\\b(Class|BaseType|Prophecy|DropLevel|ItemLevel|GemLevel|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|Rarity|ShaperItem|ElderItem|FracturedItem|SynthesisedItem|Corrupted|Identified|ShapedMap|ElderMap|BlightedMap|Height|Width|HasExplicitMod|AnyEnchantment|HasEnchantment|HasInfluence)\\b"
-        }
-      ]
+      "match": "\\b(Class|BaseType|Prophecy|DropLevel|ItemLevel|GemLevel|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|Rarity|ShaperItem|ElderItem|FracturedItem|SynthesisedItem|Corrupted|Identified|ShapedMap|ElderMap|BlightedMap|Height|Width|HasExplicitMod|AnyEnchantment|HasEnchantment|HasInfluence)\\b",
+      "name": "keyword.control.condition.advancedpoefilter"
     },
-    "keyword-action-text": {
+    "keyword-action": {
       "patterns": [
         {
-          "name": "markup.bold.advancedpoefilter",
-          "match": "\\b(SetBorderColor|SetTextColor|SetBackgroundColor|SetFontSize)\\b"
-        }
-      ]
-    },
-    "keyword-action-effect": {
-      "patterns": [
+          "match": "\\b(SetBorderColor|SetTextColor|SetBackgroundColor|SetFontSize)\\b",
+          "name": "keyword.control.action.text.advancedpoefilter"
+        },
         {
-          "name": "token.info-token.advancedpoefilter",
-          "match": "\\b(PlayAlertSound|PlayAlertSoundPositional|DisableDropSound|CustomAlertSound|MinimapIcon|PlayEffect)\\b"
+          "match": "\\b(PlayAlertSound|PlayAlertSoundPositional|DisableDropSound|CustomAlertSound|MinimapIcon|PlayEffect)\\b",
+          "name": "keyword.control.action.effect.advancedpoefilter"
         }
-      ]
+      ],
+      "name": "meta.keyword-action.advancedpoefilter"
     },
     "macro": {
-      "name": "support.function.advancedpoefilter",
-      "begin": "(Prop|Var)\\(",
-      "end": "\\)",
-      "patterns": []
+      "match": "((Prop|Var)\\()(.+)(\\))",
+      "captures": {
+        "1": { "name": "keyword.other.macro.advancedpoefilter" },
+        "3": { "name": "variable.parameter.advancedpoefilter" },
+        "4": { "name": "keyword.other.macro.advancedpoefilter" }
+      }
     },
     "function": {
-      "name": "variable.language.advancedpoefilter",
-      "begin": "(Negate|Grayscale|Saturate|Desaturate|Lighten|Darken|Whiten|Blacken|Hex|Saturation|Lightness|Plus|Minus)\\(",
-      "end": "\\)",
-      "patterns": []
+      "match": "((Negate|Grayscale|Saturate|Desaturate|Lighten|Darken|Whiten|Blacken|Hex|Saturation|Lightness|Plus|Minus)\\()(.*)(\\))",
+      "captures": {
+        "1": { "name": "keyword.other.function.advancedpoefilter" },
+        "3": { "name": "constant.numeric.advancedpoefilter" },
+        "4": { "name": "keyword.other.function.advancedpoefilter" }
+      }
     },
     "operator": {
+      "match": "=|<|>",
+      "name": "keyword.operator.advancedpoefilter"
+    },
+    "value-constant": {
       "patterns": [
         {
-          "name": "keyword.operator.advancedpoefilter",
-          "match": "(=|<|>)"
+          "match": "\\b(Normal|Magic|Rare|Unique)\\b",
+          "name": "constant.language.advancedpoefilter"
+        },
+        {
+          "match": "\\b(Largest|Medium|Small)\\b",
+          "name": "constant.language.advancedpoefilter"
+        },
+        {
+          "match": "\\b(ShAlchemy|ShBlessed|ShChaos|ShDivine|ShExalted|ShFusing|ShGeneral|ShMirror|ShRegal|ShVaal)\\b",
+          "name": "constant.language.advancedpoefilter"
+        },
+        {
+          "match": "\\b(True|False)\\b",
+          "name": "constant.language.advancedpoefilter"
+        },
+        {
+          "match": "\\b(Red|Green|Blue|Brown|White|Yellow)\\b",
+          "name": "constant.language.advancedpoefilter"
+        },
+        {
+          "match": "\\b(Circle|Diamond|Hexagon|Square|Star|Triangle)\\b",
+          "name": "constant.language.advancedpoefilter"
+        },
+        {
+          "match": "\\b(Temp)\\b",
+          "name": "constant.language.advancedpoefilter"
         }
       ]
     },
     "value-numeric": {
-      "patterns": [
-        {
-          "name": "constant.numeric.advancedpoefilter",
-          "match": "(1|2|3|4|5|6|7|8|9|0)"
-        }
-      ]
+      "match": "1|2|3|4|5|6|7|8|9|0",
+      "name": "constant.numeric.advancedpoefilter"
     },
-    "value-bool": {
-      "patterns": [
-        {
-          "name": "constant.language.advancedpoefilter",
-          "match": "\\b(Normal|Magic|Rare|Unique|Largest|Medium|Small|ShAlchemy|ShBlessed|ShChaos|ShDivine|ShExalted|ShFusing|ShGeneral|ShMirror|ShRegal|ShVaal|True|False|Red|Green|Blue|Brown|White|Yellow|Circle|Diamond|Hexagon|Square|Star|Triangle|Temp)\\b"
-        }
-      ]
-    },
-    "value-other": {
-      "patterns": [
-        {
-          "name": "constant.other.advancedpoefilter",
-          "match": "(R|G|B|W)"
-        }
-      ]
+    "value-rgbw": {
+      "match": "R|G|B|W",
+      "name": "constant.other.advancedpoefilter"
     },
     "string": {
-      "name": "string.quoted.double.advancedpoefilter",
       "begin": "\"",
       "end": "\"",
-      "patterns": []
+      "patterns": [],
+      "name": "string.quoted.double.advancedpoefilter"
     }
   }
 }
