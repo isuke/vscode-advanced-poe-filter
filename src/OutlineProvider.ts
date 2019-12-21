@@ -1,7 +1,7 @@
 import * as vscode from 'vscode'
 
 export default class OutlineProvider implements vscode.DocumentSymbolProvider {
-  static readonly pattern: RegExp = /^(Show|Hide|Unset|Var|Prop)[^\n]+"([^\n]+)"$/gm
+  static readonly pattern: RegExp = /^(Show|Hide|Unset|Ignore|Var|Prop)[^\n]+"([^\n]+)"$/gm
 
   public provideDocumentSymbols(document: vscode.TextDocument, _token: vscode.CancellationToken): vscode.SymbolInformation[] {
     let matchList: Array<any> = []

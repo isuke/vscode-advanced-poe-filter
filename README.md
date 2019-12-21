@@ -21,6 +21,7 @@ Advanced PoE Filter is used by [Filter of Kalarandra](https://filter-of-kalandra
 - Show Block
 - Hide Block
 - Unset Block
+- Ignore Block
 - Fork Branch
 - Mixin Branch
 - Var Macro
@@ -47,6 +48,10 @@ Add the following to your `setting.json`.
       {
         "scope": "keyword.control.activity.advancedpoefilter",
         "settings": { "foreground": "#6699cc" }
+      },
+      {
+        "scope": "keyword.control.branch.advancedpoefilter",
+        "settings": { "foreground": "#9999cc" }
       },
       {
         "scope": "keyword.control.condition.advancedpoefilter",

@@ -189,7 +189,7 @@ Prop("All Accessory Activity") "Jewelry"
         Prop("Magic Equipment Activity") "Magic"
             Rarity Magic
             SetTextColor Var("Magic Item Color")
-        Unset "Normal"
+        Ignore "Normal"
             Rarity Normal
             SetTextColor Var("Normal Item Color")
     Mixin "Corrupted"

@@ -23,6 +23,14 @@
       "\t$0"
     ]
   },
+  "ignore": {
+    "prefix": "Ignore Block",
+    "description": "Ignore Block",
+    "body": [
+      "Ignore \"${1:Block Name}\"",
+      "\t$0"
+    ]
+  },
   "fork": {
     "prefix": "Fork Branch",
     "description": "Fork Branch",

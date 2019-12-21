@@ -5,6 +5,7 @@
   "patterns": [
     { "include": "#comment-line" },
     { "include": "#keyword-activity" },
+    { "include": "#keyword-branch" },
     { "include": "#keyword-condition" },
     { "include": "#keyword-action" },
     { "include": "#macro" },
@@ -22,8 +23,12 @@
       "name": "comment.line.number-sign.advancedpoefilter"
     },
     "keyword-activity": {
-      "match": "\\b(Show|Hide|Unset|Fork|Mixin)\\b",
+      "match": "\\b(Show|Hide|Unset|Ignore)\\b",
       "name": "keyword.control.activity.advancedpoefilter"
+    },
+    "keyword-branch": {
+      "match": "\\b(Fork|Mixin)\\b",
+      "name": "keyword.control.branch.advancedpoefilter"
     },
     "keyword-condition": {
       "match": "\\b(Class|BaseType|Prophecy|DropLevel|ItemLevel|GemLevel|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|Rarity|ShaperItem|ElderItem|FracturedItem|SynthesisedItem|Corrupted|Identified|ShapedMap|ElderMap|BlightedMap|Height|Width|HasExplicitMod|AnyEnchantment|HasEnchantment|HasInfluence)\\b",
