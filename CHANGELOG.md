@@ -10,6 +10,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
     - outline
         - nest
 
+## [0.1.5] - 2019-12-24
+
+- feat(Highlight): support 'Ignore' activity
+
 ## [0.1.4] - 2019-12-19
 
 - refactor(Highlight): refactor syntax
