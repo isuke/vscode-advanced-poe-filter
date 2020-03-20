@@ -86,11 +86,11 @@
           "name": "constant.language.advancedpoefilter"
         },
         {
-          "match": "\\b(Red|Green|Blue|Brown|White|Yellow)\\b",
+          "match": "\\b(Red|Green|Blue|Brown|White|Yellow|Cyan|Grey|Orange|Pink|Purple)\\b",
           "name": "constant.language.advancedpoefilter"
         },
         {
-          "match": "\\b(Circle|Diamond|Hexagon|Square|Star|Triangle)\\b",
+          "match": "\\b(Circle|Diamond|Hexagon|Square|Star|Triangle|Cross|Moon|Raindrop|Kite|Pentagon|UpsideDownHouse)\\b",
           "name": "constant.language.advancedpoefilter"
         },
         {
