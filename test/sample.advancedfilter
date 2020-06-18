@@ -28,6 +28,7 @@ Show "Section1"
     AnyEnchantment True
     HasEnchantment "Enchantment Decree of Force"
     HasInfluence "Crusader" "Hunter" "Redeemer" "Warlord"
+    EnchantmentPassiveNode "Damage while you have a Herald" "Projectile Damage"
     SetBorderColor           100 101 102
     SetTextColor             103 104 105
     SetBackgroundColor       106 107 108
