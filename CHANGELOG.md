@@ -10,7 +10,20 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
     - outline
         - nest
 
-## [0.1.6] - 2019-03-20
+## [0.1.9] - 2021-01-31
+
+- feat(Highlight): support 'EnableDropSound' action
+- feat(Highlight): support 'AreaLevel', 'CorruptedMods' 'Mirrored' and 'EnchantmentPassiveNum' condition
+
+## [0.1.8] - 2020-06-18
+
+- feat(Highlight): support 'GemQualityType', 'AlternateQuality' and 'Replica' condition
+
+## [0.1.7] - 2020-06-18
+
+- feat(Highlight): support 'EnchantmentPassiveNode' condition
+
+## [0.1.6] - 2020-03-20
 
 - feat(Highlight): add new minimapIconSharpes and minimapIcon/PlayEffect Colors
 
