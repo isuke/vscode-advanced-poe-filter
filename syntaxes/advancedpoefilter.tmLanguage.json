@@ -41,7 +41,7 @@
           "name": "keyword.control.action.text.advancedpoefilter"
         },
         {
-          "match": "\\b(PlayAlertSound|PlayAlertSoundPositional|DisableDropSound|CustomAlertSound|MinimapIcon|PlayEffect)\\b",
+          "match": "\\b(PlayAlertSound|PlayAlertSoundPositional|DisableDropSound|EnableDropSound|CustomAlertSound|MinimapIcon|PlayEffect)\\b",
           "name": "keyword.control.action.effect.advancedpoefilter"
         }
       ],
