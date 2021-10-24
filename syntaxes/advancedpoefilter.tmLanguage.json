@@ -31,7 +31,7 @@
       "name": "keyword.control.branch.advancedpoefilter"
     },
     "keyword-condition": {
-      "match": "\\b(Class|BaseType|Prophecy|DropLevel|ItemLevel|AreaLevel|GemLevel|GemQualityType|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|Rarity|ShaperItem|ElderItem|FracturedItem|SynthesisedItem|Corrupted|Mirrored|Identified|ShapedMap|ElderMap|BlightedMap|Height|Width|CorruptedMods|EnchantmentPassiveNum|HasExplicitMod|AnyEnchantment|HasEnchantment|HasInfluence|EnchantmentPassiveNode|AlternateQuality|Replica)\\b",
+      "match": "\\b(Class|BaseType|Prophecy|DropLevel|ItemLevel|AreaLevel|GemLevel|GemQualityType|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|Rarity|BaseDefencePercentile|BaseArmour|BaseEnergyShield|BaseEvasion|BaseWard|ShaperItem|ElderItem|FracturedItem|SynthesisedItem|Corrupted|Mirrored|Identified|Scourged|ShapedMap|ElderMap|BlightedMap|UberBlightedMap|Height|Width|CorruptedMods|EnchantmentPassiveNum|HasExplicitMod|AnyEnchantment|HasEnchantment|HasInfluence|EnchantmentPassiveNode|AlternateQuality|Replica)\\b",
       "name": "keyword.control.condition.advancedpoefilter"
     },
     "keyword-action": {
