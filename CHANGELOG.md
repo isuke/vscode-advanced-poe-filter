@@ -10,6 +10,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
     - outline
         - nest
 
+## [0.1.10] - 2021-10-24
+
+- feat(Highlight): feat: support 'BaseDefencePercentile', 'BaseArmour', 'BaseEnergyShield', 'BaseEvasion', 'BaseWard', 'Scourged' and 'UberBlightedMap'
+
 ## [0.1.9] - 2021-01-31
 
 - feat(Highlight): support 'EnableDropSound' action
