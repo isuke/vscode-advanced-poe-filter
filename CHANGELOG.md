@@ -10,6 +10,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
     - outline
         - nest
 
+## [0.1.11] - 2022-03-12
+
+- feat(Highlight): support 'ArchnemesisMod'
+- feat(Highlight): support 'HasEaterOfWorldsImplicit' and 'HasSearingExarchImplicit'
+- feat(Highlight): remove 'Prophecy'
+- feat(Highlight): remove 'ShaperItem' and 'ElderItem'
+
 ## [0.1.10] - 2021-10-24
 
 - feat(Highlight): feat: support 'BaseDefencePercentile', 'BaseArmour', 'BaseEnergyShield', 'BaseEvasion', 'BaseWard', 'Scourged' and 'UberBlightedMap'
