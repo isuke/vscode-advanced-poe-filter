@@ -72,6 +72,7 @@ Show "Section2"
     PlayAlertSound           2
     MinimapIcon              Medium Red Circle
     PlayEffect               Blue Temp
+    Continue
 
 Show "Section3"
     SetBorderColor           Negate()

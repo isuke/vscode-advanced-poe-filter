@@ -6,6 +6,7 @@
     { "include": "#comment-line" },
     { "include": "#keyword-activity" },
     { "include": "#keyword-branch" },
+    { "include": "#keyword-special" },
     { "include": "#keyword-condition" },
     { "include": "#keyword-condition-deleted" },
     { "include": "#keyword-condition-deprecation" },
@@ -31,6 +32,10 @@
     "keyword-branch": {
       "match": "\\b(Fork|Mixin)\\b",
       "name": "keyword.control.branch.advancedpoefilter"
+    },
+    "keyword-special": {
+      "match": "\\b(Continue)\\b",
+      "name": "keyword.control.special.advancedpoefilter"
     },
     "keyword-condition": {
       "match": "\\b(Class|BaseType|Rarity|BaseDefencePercentile|BaseArmour|BaseEnergyShield|BaseEvasion|BaseWard|DropLevel|ItemLevel|AreaLevel|GemLevel|TransfiguredGem|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|FracturedItem|SynthesisedItem|Corrupted|Mirrored|Identified|Scourged|ShapedMap|ElderMap|BlightedMap|UberBlightedMap|Height|Width|CorruptedMods|EnchantmentPassiveNum|HasExplicitMod|HasImplicitMod|HasEaterOfWorldsImplicit|HasSearingExarchImplicit|AnyEnchantment|HasEnchantment|HasInfluence|EnchantmentPassiveNode|Replica|ArchnemesisMod|HasCruciblePassiveTree)\\b",
