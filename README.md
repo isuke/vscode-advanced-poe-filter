@@ -1,4 +1,4 @@
-# Advanced PoE Filter [VS Code](https://code.visualstudio.com/) Extenstion
+# Advanced PoE Filter [VS Code](https://code.visualstudio.com/) Extension
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/isuke/vscode-advanced-poe-filter/master/LICENSE) [![Build Status](https://travis-ci.org/isuke/vscode-advanced-poe-filter.svg?branch=master)](https://travis-ci.org/isuke/vscode-advanced-poe-filter) [![git-consistent friendly](https://img.shields.io/badge/git--consistent-friendly-brightgreen.svg)](https://github.com/isuke/git-consistent)
 
