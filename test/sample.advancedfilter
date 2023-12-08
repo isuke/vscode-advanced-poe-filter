@@ -96,7 +96,7 @@ Unset "Section6"
     SetBorderColor           Saturation(64%)
     SetTextColor             Lightness(75%)
 
-Hide "Remain Section"
+Minimal "Remain Section"
 
 # variables
 Show "Flasks"

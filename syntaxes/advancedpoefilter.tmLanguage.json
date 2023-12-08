@@ -25,7 +25,7 @@
       "name": "comment.line.number-sign.advancedpoefilter"
     },
     "keyword-activity": {
-      "match": "\\b(Show|Hide|Unset|Ignore)\\b",
+      "match": "\\b(Show|Hide|Unset|Ignore|Minimal)\\b",
       "name": "keyword.control.activity.advancedpoefilter"
     },
     "keyword-branch": {
