@@ -1,3 +1,6 @@
+Import "MyCustomRules.filter"
+Import "MyOptionalRules.filter" Optional
+
 # all actions and conditions
 Show "Section1"
     Class          "Maps"

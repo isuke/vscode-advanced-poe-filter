@@ -4,6 +4,7 @@
   "name": "AdvancedPoeFilter",
   "patterns": [
     { "include": "#comment-line" },
+    { "include": "#import" },
     { "include": "#keyword-activity" },
     { "include": "#keyword-branch" },
     { "include": "#keyword-special" },
@@ -24,6 +25,10 @@
       "begin": "#",
       "end": "\n",
       "name": "comment.line.number-sign.advancedpoefilter"
+    },
+    "import": {
+      "match": "\\b(Import)\\b",
+      "name": "support.function"
     },
     "keyword-activity": {
       "match": "\\b(Show|Hide|Unset|Ignore|Minimal)\\b",
