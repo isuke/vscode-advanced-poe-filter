@@ -8,6 +8,7 @@
     { "include": "#keyword-branch" },
     { "include": "#keyword-condition" },
     { "include": "#keyword-condition-deleted" },
+    { "include": "#keyword-condition-deprecation" },
     { "include": "#keyword-action" },
     { "include": "#macro" },
     { "include": "#function" },
@@ -38,6 +39,10 @@
     "keyword-condition-deleted": {
       "match": "\\b(Prophecy|AlternateQuality|GemQualityType)\\b",
       "name": "markup.deleted.advancedpoefilter"
+    },
+    "keyword-condition-deprecation": {
+      "match": "\\b(ShaperItem|ElderItem)\\b",
+      "name": "invalid.deprecated"
     },
     "keyword-action": {
       "patterns": [

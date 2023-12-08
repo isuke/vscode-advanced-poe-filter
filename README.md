@@ -42,6 +42,10 @@ Add the following to your `setting.json`.
         "settings": { "fontStyle": "strikethrough" }
       },
       {
+        "scope": "invalid.deprecated",
+        "settings": { "fontStyle": "strikethrough" }
+      },
+      {
         "scope": "keyword.other.macro.advancedpoefilter",
         "settings": { "fontStyle": "underline" }
       },

@@ -44,6 +44,8 @@ Show "Section1"
     Replica True
     ArchnemesisMod           "Toxic"
     HasCruciblePassiveTree   True
+    ShaperItem True
+    ElderItem True
     Prophecy       "Foo"
     AlternateQuality True
     GemQualityType "Superior"
