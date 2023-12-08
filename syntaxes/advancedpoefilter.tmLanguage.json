@@ -13,7 +13,7 @@
     { "include": "#operator" },
     { "include": "#value-constant" },
     { "include": "#value-numeric" },
-    { "include": "#value-rgbw" },
+    { "include": "#value-socket-type" },
     { "include": "#string" }
   ],
   "repository": {
@@ -103,8 +103,8 @@
       "match": "1|2|3|4|5|6|7|8|9|0",
       "name": "constant.numeric.advancedpoefilter"
     },
-    "value-rgbw": {
-      "match": "R|G|B|W",
+    "value-socket-type": {
+      "match": "R|G|B|W|A|D",
       "name": "constant.other.advancedpoefilter"
     },
     "string": {

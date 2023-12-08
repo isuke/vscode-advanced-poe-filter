@@ -11,7 +11,7 @@ Show "Section1"
     Quality        = 15
     LinkedSockets  = 6
     Sockets        = 5
-    SocketGroup    RGB
+    SocketGroup    RGBWAD
     Rarity         = Rare
     ShaperItem     True
     ElderItem      False
