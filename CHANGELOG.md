@@ -10,6 +10,16 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
     - outline
         - nest
 
+## [0.1.12] - 2023-12-09
+
+- feat(Highlight): support 'A' and 'D' of SocketType
+- feat(Highlight): add keyword-condition-deleted role
+- feat(Highlight): add 'TransfiguredGem'
+- feat(Highlight): add keyword-condition-deprecation role
+- feat(Highlight): add 'Minimal' keyword-activity
+- feat(Highlight): add keyword-special role
+- feat(Highlight): support 'Import'
+
 ## [0.1.11] - 2022-03-12
 
 - feat(Highlight): support 'ArchnemesisMod'
