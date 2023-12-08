@@ -2,40 +2,57 @@
 Show "Section1"
     Class          "Maps"
     BaseType       "Sacrificial Garb"
-    Prophecy       "Foo"
     DropLevel      > 85
     ItemLevel      >= 70
+    AreaLevel      < 30
     GemLevel       = 10
     StackSize      < 11
     MapTier        <= 12
     Quality        = 15
     LinkedSockets  = 6
-    Sockets        = 5
-    SocketGroup    RGBWAD
+    Sockets        >= 5RGBWAD
+    SocketGroup    >= 5RGBWAD
     Rarity         = Rare
-    ShaperItem     True
-    ElderItem      False
+    BaseDefencePercentile > 50
+    BaseArmour       > 40
+    BaseEnergyShield > 41
+    BaseEvasion      > 42
+    BaseWard         > 43
     FracturedItem  False
     SynthesisedItem False
     Corrupted      True
+    Mirrored       True
     Identified     True
+    Scourged       True
     ShapedMap      True
     ElderMap       True
     BlightedMap    True
+    UberBlightedMap True
     Height         > 1
     Width          > 2
-    HasExplicitMod "Piyo"
+    CorruptedMods  >= 1
+    EnchantmentPassiveNum > 5
+    HasExplicitMod "Foo" "Bar"
+    HasImplicitMod True
+    HasEaterOfWorldsImplicit >= 4
+    HasSearingExarchImplicit >= 4
     AnyEnchantment True
-    HasEnchantment "Enchantment Decree of Force"
-    HasInfluence "Crusader" "Hunter" "Redeemer" "Warlord"
+    HasEnchantment "Foo" "Bar"
+    HasInfluence "Shaper" "Elder"
     EnchantmentPassiveNode "Damage while you have a Herald" "Projectile Damage"
+    Replica True
+    ArchnemesisMod           "Toxic"
+    HasCruciblePassiveTree   True
+    Prophecy       "Foo"
+    AlternateQuality True
+    GemQualityType "Superior"
     SetBorderColor           100 101 102
     SetTextColor             103 104 105
     SetBackgroundColor       106 107 108
     SetFontSize              30
     PlayAlertSound           16 300
-    DisableDropSound         False
-    CustomAlertSound         "C\\foobar\\sound.mp3"
+    EnableDropSound
+    CustomAlertSound         "C\\foobar\\sound.mp3" 300
     MinimapIcon              0 Red Circle
     PlayEffect               Red
 

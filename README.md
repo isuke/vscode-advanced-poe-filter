@@ -38,6 +38,10 @@ Add the following to your `setting.json`.
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
+        "scope": "markup.deleted.advancedpoefilter",
+        "settings": { "fontStyle": "strikethrough" }
+      },
+      {
         "scope": "keyword.other.macro.advancedpoefilter",
         "settings": { "fontStyle": "underline" }
       },

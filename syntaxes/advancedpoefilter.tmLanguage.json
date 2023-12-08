@@ -7,6 +7,7 @@
     { "include": "#keyword-activity" },
     { "include": "#keyword-branch" },
     { "include": "#keyword-condition" },
+    { "include": "#keyword-condition-deleted" },
     { "include": "#keyword-action" },
     { "include": "#macro" },
     { "include": "#function" },
@@ -31,8 +32,12 @@
       "name": "keyword.control.branch.advancedpoefilter"
     },
     "keyword-condition": {
-      "match": "\\b(Class|BaseType|DropLevel|ItemLevel|AreaLevel|GemLevel|GemQualityType|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|Rarity|BaseDefencePercentile|BaseArmour|BaseEnergyShield|BaseEvasion|BaseWard|FracturedItem|SynthesisedItem|Corrupted|Mirrored|Identified|Scourged|ShapedMap|ElderMap|BlightedMap|UberBlightedMap|Height|Width|CorruptedMods|EnchantmentPassiveNum|HasExplicitMod|HasEaterOfWorldsImplicit|HasSearingExarchImplicit|AnyEnchantment|HasEnchantment|HasInfluence|EnchantmentPassiveNode|AlternateQuality|Replica|ArchnemesisMod)\\b",
+      "match": "\\b(Class|BaseType|Rarity|BaseDefencePercentile|BaseArmour|BaseEnergyShield|BaseEvasion|BaseWard|DropLevel|ItemLevel|AreaLevel|GemLevel|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|FracturedItem|SynthesisedItem|Corrupted|Mirrored|Identified|Scourged|ShapedMap|ElderMap|BlightedMap|UberBlightedMap|Height|Width|CorruptedMods|EnchantmentPassiveNum|HasExplicitMod|HasImplicitMod|HasEaterOfWorldsImplicit|HasSearingExarchImplicit|AnyEnchantment|HasEnchantment|HasInfluence|EnchantmentPassiveNode|Replica|ArchnemesisMod|HasCruciblePassiveTree)\\b",
       "name": "keyword.control.condition.advancedpoefilter"
+    },
+    "keyword-condition-deleted": {
+      "match": "\\b(Prophecy|AlternateQuality|GemQualityType)\\b",
+      "name": "markup.deleted.advancedpoefilter"
     },
     "keyword-action": {
       "patterns": [
