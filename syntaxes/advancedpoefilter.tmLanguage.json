@@ -32,7 +32,7 @@
       "name": "keyword.control.branch.advancedpoefilter"
     },
     "keyword-condition": {
-      "match": "\\b(Class|BaseType|Rarity|BaseDefencePercentile|BaseArmour|BaseEnergyShield|BaseEvasion|BaseWard|DropLevel|ItemLevel|AreaLevel|GemLevel|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|FracturedItem|SynthesisedItem|Corrupted|Mirrored|Identified|Scourged|ShapedMap|ElderMap|BlightedMap|UberBlightedMap|Height|Width|CorruptedMods|EnchantmentPassiveNum|HasExplicitMod|HasImplicitMod|HasEaterOfWorldsImplicit|HasSearingExarchImplicit|AnyEnchantment|HasEnchantment|HasInfluence|EnchantmentPassiveNode|Replica|ArchnemesisMod|HasCruciblePassiveTree)\\b",
+      "match": "\\b(Class|BaseType|Rarity|BaseDefencePercentile|BaseArmour|BaseEnergyShield|BaseEvasion|BaseWard|DropLevel|ItemLevel|AreaLevel|GemLevel|TransfiguredGem|StackSize|MapTier|Quality|LinkedSockets|Sockets|SocketGroup|FracturedItem|SynthesisedItem|Corrupted|Mirrored|Identified|Scourged|ShapedMap|ElderMap|BlightedMap|UberBlightedMap|Height|Width|CorruptedMods|EnchantmentPassiveNum|HasExplicitMod|HasImplicitMod|HasEaterOfWorldsImplicit|HasSearingExarchImplicit|AnyEnchantment|HasEnchantment|HasInfluence|EnchantmentPassiveNode|Replica|ArchnemesisMod|HasCruciblePassiveTree)\\b",
       "name": "keyword.control.condition.advancedpoefilter"
     },
     "keyword-condition-deleted": {

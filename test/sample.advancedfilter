@@ -6,6 +6,7 @@ Show "Section1"
     ItemLevel      >= 70
     AreaLevel      < 30
     GemLevel       = 10
+    TransfiguredGem True
     StackSize      < 11
     MapTier        <= 12
     Quality        = 15
