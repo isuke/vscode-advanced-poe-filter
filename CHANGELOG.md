@@ -10,6 +10,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
     - outline
         - nest
 
+## [0.1.13] - 2024-01-09
+
+- feat(Highlight): support 'CustomAlertSoundOptional'
+- feat(Highlight): support 'DisableDropSoundIfAlertSound'
+- feat(Highlight): support 'EnableDropSoundIfAlertSound
+
 ## [0.1.12] - 2023-12-09
 
 - feat(Highlight): support 'A' and 'D' of SocketType
