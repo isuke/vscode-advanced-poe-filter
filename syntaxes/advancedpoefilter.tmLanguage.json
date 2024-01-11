@@ -94,7 +94,7 @@
           "name": "constant.language.advancedpoefilter"
         },
         {
-          "match": "\\b(Largest|Medium|Small)\\b",
+          "match": "\\b(Large|Medium|Small)\\b",
           "name": "constant.language.advancedpoefilter"
         },
         {
