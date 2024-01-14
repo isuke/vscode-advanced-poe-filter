@@ -1,4 +1,4 @@
-{
+module.exports = {
   "env": {
     "es6": true,
     "amd": true,
@@ -7,29 +7,17 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint"
   ],
   "parserOptions": {
-    "ecmaVersion": 2017,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "rules": {
     "no-console": "warn",
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "prettier/prettier": [
-      "error",
-      {
-        "parser": "typescript",
-        "semi": false,
-        "singleQuote": true,
-        "trailingComma": "es5",
-        "printWidth": 160,
-        "arrowParens": "always"
-      }
-    ]
   }
 }

@@ -26,15 +26,11 @@
     "fix": "eslint --fix src/**/*.ts",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "predeploy": "yarn run compile",
+    "predeploy": "npm run compile",
     "deploy": "vsce publish"
   },
   "icon": "images/icon-192x192.png",
   "main": "./out/extension.js",
-  "activationEvents": [
-    "onLanguage:advancedpoefilter"
-  ],
   "contributes": {
     "languages": [
       {
@@ -64,15 +60,13 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "12.x.x",
-    "@typescript-eslint/eslint-plugin": "3.6.1",
-    "@typescript-eslint/parser": "3.6.1",
-    "@typescript-eslint/typescript-estree": "3.6.1",
-    "eslint": "7.4.0",
-    "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-prettier": "3.1.4",
-    "prettier": "2.0.5",
-    "typescript": "3.9.7",
-    "vscode": "1.1.37"
+    "@types/node": "20.11.0",
+    "@types/vscode": "1.85.0",
+    "@typescript-eslint/eslint-plugin": "6.18.1",
+    "@typescript-eslint/parser": "6.18.1",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "prettier": "3.2.2",
+    "typescript": "5.3.3"
   }
 }
