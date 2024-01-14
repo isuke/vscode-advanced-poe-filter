@@ -1,6 +1,6 @@
 # Advanced PoE Filter [VS Code](https://code.visualstudio.com/) Extension
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/isuke/vscode-advanced-poe-filter/master/LICENSE) [![Build Status](https://travis-ci.org/isuke/vscode-advanced-poe-filter.svg?branch=master)](https://travis-ci.org/isuke/vscode-advanced-poe-filter) [![git-consistent friendly](https://img.shields.io/badge/git--consistent-friendly-brightgreen.svg)](https://github.com/isuke/git-consistent)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/isuke/vscode-advanced-poe-filter/master/LICENSE) [![git-consistent friendly](https://img.shields.io/badge/git--consistent-friendly-brightgreen.svg)](https://github.com/isuke/git-consistent) ![github actions status](https://github.com/isuke/vscode-advanced-poe-filter/actions/workflows/lint.yml/badge.svg)
 
 This [VS Code](https://code.visualstudio.com/) extension provides support for Advanced PoE Filter.
 
